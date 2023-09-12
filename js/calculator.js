@@ -139,7 +139,7 @@ const calculateDeveloper = () => {
 
   valueEtac.innerText = customRound(calcEtacValue);
 
-  if ((calcEtacValue / 209) * 100 > 10) {
+  if ((calcEtacValue / 209) * 100 > 15) {
     elEtac.style.height = `calc(${(calcEtacValue / 209) * 100}%)`;
   } else {
     elEtac.style.height = `15%`;
@@ -200,7 +200,7 @@ const calculateConsumer = () => {
     calculateConsumerConventionalResult
   );
 
-  if ((calculateConsumerConventionalResult / 5500) * 100 > 10) {
+  if ((calculateConsumerConventionalResult / 5500) * 100 > 15) {
     elConvetionalConsumer.style.height = `calc(${
       (calculateConsumerConventionalResult / 5500) * 100
     }% + 2%)`;
